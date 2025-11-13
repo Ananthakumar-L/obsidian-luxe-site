@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import Logo3D from "./Logo3D";
 
 export const Hero = () => {
   return (
@@ -12,52 +13,64 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(240_10%_15%/0.1)_1px,transparent_1px),linear-gradient(to_bottom,hsl(240_10%_15%/0.1)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-card/50 backdrop-blur-sm">
-            <Sparkles className="w-4 h-4 text-primary animate-glow-pulse" />
-            <span className="text-sm text-muted-foreground">Next-Generation Technology</span>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Content */}
+          <div className="text-center lg:text-left space-y-8 animate-fade-in">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-card/50 backdrop-blur-sm lg:mx-0 mx-auto">
+              <Sparkles className="w-4 h-4 text-primary animate-glow-pulse" />
+              <span className="text-sm text-muted-foreground">Next-Generation Technology</span>
+            </div>
+            
+            {/* Main heading */}
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <span className="bg-gradient-primary bg-clip-text text-transparent">
+                Innovation Meets
+              </span>
+              <br />
+              <span className="text-foreground">Excellence</span>
+            </h1>
+            
+            {/* Subheading */}
+            <p className="text-xl md:text-2xl text-muted-foreground lg:max-w-xl">
+              Transforming ideas into cutting-edge solutions with advanced technology and creative expertise
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 lg:justify-start justify-center items-center pt-4">
+              <Button size="lg" variant="glow" className="group">
+                Get Started
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button size="lg" variant="outline">
+                Learn More
+              </Button>
+            </div>
+            
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-8 pt-12">
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
+                <div className="text-sm text-muted-foreground">Projects Delivered</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-secondary">98%</div>
+                <div className="text-sm text-muted-foreground">Client Satisfaction</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-accent">24/7</div>
+                <div className="text-sm text-muted-foreground">Support Available</div>
+              </div>
+            </div>
           </div>
-          
-          {/* Main heading */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
-              Innovation Meets
-            </span>
-            <br />
-            <span className="text-foreground">Excellence</span>
-          </h1>
-          
-          {/* Subheading */}
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Transforming ideas into cutting-edge solutions with advanced technology and creative expertise
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" variant="glow" className="group">
-              Get Started
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button size="lg" variant="outline">
-              Learn More
-            </Button>
-          </div>
-          
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-primary">500+</div>
-              <div className="text-sm text-muted-foreground">Projects Delivered</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-secondary">98%</div>
-              <div className="text-sm text-muted-foreground">Client Satisfaction</div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl md:text-4xl font-bold text-accent">24/7</div>
-              <div className="text-sm text-muted-foreground">Support Available</div>
-            </div>
+
+          {/* Right side - 3D Logo */}
+          <div className="relative hidden lg:block">
+              <Logo3D />
+            {/* Enhanced glow effects */}
+            <div className="absolute top-1/4 -right-12  w-64 h-64 bg-cyan-500/30 rounded-full blur-3xl -z-10 animate-pulse" />
+            <div className="absolute bottom-1/4 -left-12 w-64 h-64 bg-purple-500/30 rounded-full blur-3xl -z-10 animate-pulse" style={{ animationDelay: '1s' }} />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 blur-2xl -z-20 scale-110" />
           </div>
         </div>
       </div>

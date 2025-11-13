@@ -17,8 +17,8 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary" />
-            <span className="text-xl font-bold">TechCo</span>
+            <img src="/logo.png" alt="Macrozn" className="w-8 h-8 object-contain" />
+            <span className="text-xl font-bold">Macrozn</span>
           </div>
           
           {/* Desktop Navigation */}

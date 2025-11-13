@@ -8,8 +8,8 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-gradient-primary" />
-              <span className="text-xl font-bold">TechCo</span>
+              <img src="/logo.png" alt="Macrozn" className="w-8 h-8 object-contain" />
+              <span className="text-xl font-bold">Macrozn</span>
             </div>
             <p className="text-sm text-muted-foreground">
               Next-generation technology solutions for modern businesses.
@@ -55,7 +55,7 @@ export const Footer = () => {
         
         {/* Copyright */}
         <div className="pt-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} TechCo. All rights reserved.
+          © {new Date().getFullYear()} Macrozn. All rights reserved.
         </div>
       </div>
     </footer>
