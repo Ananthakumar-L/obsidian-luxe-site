@@ -61,7 +61,7 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              About InnovateSoft
+              About Macrozn
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We're a team of passionate developers, designers, and innovators dedicated to
@@ -137,7 +137,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Founded in 2014, InnovateSoft started with a simple mission: to help businesses
+                Founded in 2014, Macrozn started with a simple mission: to help businesses
                 harness the power of technology to achieve their goals.
               </p>
               <p>

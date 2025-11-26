@@ -10,6 +10,7 @@ import {
 import { ArrowRight, Code, Palette, Smartphone, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import Autoplay from "embla-carousel-autoplay";
+import { Hero3DLogo } from "@/components/Hero3DLogo";
 
 const Index = () => {
   const slides = [
@@ -55,6 +56,19 @@ const Index = () => {
 
   return (
     <div className="pt-16">
+      {/* 3D Logo Section */}
+      <section className="relative bg-gradient-to-br from-primary/5 via-accent/5 to-background py-12">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-2">
+              Welcome to Macrozn
+            </h2>
+            <p className="text-muted-foreground">Innovative Software Solutions</p>
+          </div>
+          <Hero3DLogo />
+        </div>
+      </section>
+
       {/* Hero Carousel */}
       <section className="relative">
         <Carousel
