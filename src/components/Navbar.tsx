@@ -21,11 +21,9 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">IS</span>
-            </div>
-            <span className="text-xl font-heading font-bold">InnovateSoft</span>
+          <Link to="/" className="flex items-center space-x-3">
+            <img src="/logo.png" alt="Macrozn Logo" className="w-10 h-10 object-contain" />
+            <span className="text-xl font-heading font-bold">Macrozn</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">

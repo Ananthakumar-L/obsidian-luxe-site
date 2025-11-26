@@ -7,11 +7,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">IS</span>
-              </div>
-              <span className="text-xl font-heading font-bold">InnovateSoft</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src="/logo.png" alt="Macrozn Logo" className="w-10 h-10 object-contain" />
+              <span className="text-xl font-heading font-bold">Macrozn</span>
             </div>
             <p className="text-muted-foreground text-sm">
               Building innovative software solutions for businesses worldwide.
@@ -58,7 +56,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          <p>&copy; 2024 InnovateSoft. All rights reserved.</p>
+          <p>&copy; 2024 Macrozn. All rights reserved.</p>
         </div>
       </div>
     </footer>
